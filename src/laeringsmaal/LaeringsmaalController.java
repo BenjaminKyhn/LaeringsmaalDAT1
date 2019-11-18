@@ -25,20 +25,6 @@ public class LaeringsmaalController {
     }
 
     @FXML
-    private void gem(){
-        System.out.println(emner.getEmne(i));
-        System.out.println(q.getSporgsmaal(i));
-        emner.gemtEmne[0] = emner.getEmne(i);
-        q.gemtSporgsmaal.add(q.getSporgsmaal(i));
-    }
-
-    @FXML
-    private void aabn(){
-        emneTextField.setText(emner.gemtEmne[0]);
-        spoergsmaalTextArea.setText(q.gemtSporgsmaal.get(0) + "\n");
-    }
-
-    @FXML
     private void naeste() {
         if (i < q.getAlleSporgsmaal().size()-1)
         i++;
@@ -53,6 +39,20 @@ public class LaeringsmaalController {
             emneTextField.setText("");
             indlaes();
         }
+    }
+
+    @FXML
+    private void gem(){
+        System.out.println(emner.getEmne(i));
+        System.out.println(q.getSporgsmaal(i));
+        emner.gemtEmne[0] = emner.getEmne(i);
+        q.gemtSporgsmaal.add(q.getSporgsmaal(i));
+    }
+
+    @FXML
+    private void aabn(){
+        emneTextField.setText(emner.gemtEmne[0]);
+        spoergsmaalTextArea.setText(q.gemtSporgsmaal.get(0) + "\n");
     }
 
 }

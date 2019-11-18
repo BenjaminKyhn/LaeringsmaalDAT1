@@ -26,15 +26,19 @@ public class LaeringsmaalController {
 
     @FXML
     private void naeste() {
+        if (i < q.getAlleSporgsmaal().size()-1)
         i++;
         indlaes();
+        System.out.println(q.getAlleSporgsmaal().size());
     }
 
     @FXML
     private void forrige() {
-        i--;
-        emneTextField.setText("");
-        indlaes();
+        if (i > 0){
+            i--;
+            emneTextField.setText("");
+            indlaes();
+        }
     }
 
 }

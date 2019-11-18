@@ -21,7 +21,9 @@ public class Sporgsmaal {
         alleSporgsmaal.add("Forklar sammenhæng mellem klasser og objekter i java.");
     }
 
-    
+    // Gemt spørgsmål
+    private ArrayList<String> gemtSporgsmaal;
+
     public ArrayList<String> getAlleSporgsmaal() {
         return alleSporgsmaal;
     }

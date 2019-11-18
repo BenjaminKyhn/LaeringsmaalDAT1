@@ -11,7 +11,7 @@ package model;
  */
 public class Emner {
 
-    private String[] emner = new String[13];
+    public String[] emner = new String[13];
 
     public Emner() {
         emner[0] = "Variable";
@@ -27,6 +27,9 @@ public class Emner {
         emner[10] = "Nedarvning";
 
     }
+
+    // Gemt data
+    public String[] gemtEmne = new String[1];
 
     public String[] getEmner() {
         return emner;

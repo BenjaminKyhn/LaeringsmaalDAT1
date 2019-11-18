@@ -23,7 +23,7 @@ public class Sporgsmaal {
         gemtSporgsmaal = new ArrayList<>();
     }
 
-    // Gemt spørgsmål
+    // Gemmer spørgsmål
     public ArrayList<String> gemtSporgsmaal;
 
     public ArrayList<String> getAlleSporgsmaal() {

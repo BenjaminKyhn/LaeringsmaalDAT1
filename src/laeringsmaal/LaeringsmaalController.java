@@ -22,6 +22,16 @@ public class LaeringsmaalController {
         System.out.println(emner.getEmne(i));
         emneTextField.setText(emner.getEmne(i));
         spoergsmaalTextArea.setText(q.getSporgsmaal(i) + "\n");
+//        emneTextField.setText(emner.gemtEmne[0]);
+//        spoergsmaalTextArea.setText(q.gemtSporgsmaal.get(0) + "\n");
+    }
+
+    @FXML
+    private void gem(){
+        System.out.println(emner.getEmne(i));
+        System.out.println(q.getSporgsmaal(i));
+        emner.gemtEmne[0] = emner.getEmne(i);
+        q.gemtSporgsmaal.add(q.getSporgsmaal(i));
     }
 
     @FXML

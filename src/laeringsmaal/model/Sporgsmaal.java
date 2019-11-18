@@ -19,10 +19,12 @@ public class Sporgsmaal {
         alleSporgsmaal.add("Forklar hvilke datatyper, der er i Java.");
         alleSporgsmaal.add("Vis et eksempel på typecasting fra double til int.");
         alleSporgsmaal.add("Forklar sammenhæng mellem klasser og objekter i java.");
+
+        gemtSporgsmaal = new ArrayList<>();
     }
 
     // Gemt spørgsmål
-    private ArrayList<String> gemtSporgsmaal;
+    public ArrayList<String> gemtSporgsmaal;
 
     public ArrayList<String> getAlleSporgsmaal() {
         return alleSporgsmaal;

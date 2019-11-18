@@ -20,10 +20,8 @@ public class LaeringsmaalController {
     @FXML
     private void indlaes() {
         System.out.println(emner.getEmne(i));
-        emneTextField.setText(emner.getEmne(i));
-        spoergsmaalTextArea.setText(q.getSporgsmaal(i) + "\n");
-//        emneTextField.setText(emner.gemtEmne[0]);
-//        spoergsmaalTextArea.setText(q.gemtSporgsmaal.get(0) + "\n");
+            emneTextField.setText(emner.getEmne(i));
+            spoergsmaalTextArea.setText(q.getSporgsmaal(i) + "\n");
     }
 
     @FXML
@@ -32,6 +30,12 @@ public class LaeringsmaalController {
         System.out.println(q.getSporgsmaal(i));
         emner.gemtEmne[0] = emner.getEmne(i);
         q.gemtSporgsmaal.add(q.getSporgsmaal(i));
+    }
+
+    @FXML
+    private void aabn(){
+        emneTextField.setText(emner.gemtEmne[0]);
+        spoergsmaalTextArea.setText(q.gemtSporgsmaal.get(0) + "\n");
     }
 
     @FXML
